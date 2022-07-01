@@ -1,5 +1,7 @@
 <template>
-  <Nft />
+  <main>
+    <Nft />
+  </main>
 </template>
 
 <script>
@@ -10,3 +12,13 @@
     }
   }
 </script>
+
+<style scoped>
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+</style>
