@@ -8,7 +8,7 @@
     </div>
     
     <div id="info">
-      <h2> <a href="#">Equilibrium &#35;3429</a> </h2>
+      <h1> <a href="#">Equilibrium &#35;3429</a> </h1>
       <p>Our Equilibrium collection promotes balance and calm.</p>
     </div>
   
@@ -103,15 +103,18 @@
     cursor: pointer;
   }
   
+  h1 {
+    font-size: 24px;
+  }
 
-  h2 a{
+  h1 a{
     text-decoration: none;
     color: hsl(0, 0%, 100%);
     font-weight: 600;
     transition: .3s;
   }
 
-  h2 a:hover{
+  h1 a:hover{
     color: hsl(178, 100%, 50%);
   }
 
