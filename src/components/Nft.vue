@@ -8,35 +8,36 @@
     </div>
     
     <div id="info">
-      <h1> <a href="#">Equilibrium &#35;3429</a> </h1>
-      <p>Our Equilibrium collection promotes balance and calm.</p>
+      <h1> <a href="#">{{ nft.title }} &#35;3429</a> </h1>
+      <p>{{ nft.description }}.</p>
     </div>
   
     <div id="sub-info">
       <span>
         <img id="icon-eth" src="./icons/icon-ethereum.svg" alt="eth" /> 
-        0.041 ETH 
+        {{ nft.price }} ETH 
       </span>
       <span>
         <img id="icon-clock" src="./icons/icon-clock.svg" alt="clock" />
-        3 days left
+        {{ nft.expirationDays }} days left
       </span>
     </div>
 
     <div id="created-by">
       <img src="../assets/img/image-avatar.png" alt="avatar" />
-      <span>Creation of <a href="#">Jules Wyvern</a></span>
+      <span>Creation of <a href="#">{{ nft.creator }}</a></span>
     </div>
   </div>
 </template>
 
-<script setup>
-  defineProps({
-    nft: {
-      type: Object,
-      required: true
+<script>
+  export default {
+    props: ['nft'],
+
+    mounted() {
+      console.log(this.nft)
     }
-  })
+  }
 </script>
 
 <style scoped>
