@@ -1,6 +1,14 @@
-# nft-card
+# NFT Card Component
+Was developed a simple NFT Card Component in VueJS, which contains the information about a specific NFT.
 
-This template should help get you started developing with Vue 3 in Vite.
+## Was developed in:
+- VueJS
+- Javascript
+- HTML (Template Vue)
+- CSS
+
+## Demo
+![Card](./public/nft-card.gif)
 
 ## Recommended IDE Setup
 
